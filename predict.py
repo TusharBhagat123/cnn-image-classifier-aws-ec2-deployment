@@ -3,7 +3,7 @@ from PIL import Image
 import tensorflow as tf
 
 # Load the trained model
-model = tf.keras.models.load_model("model.keras")
+model = tf.saved_model.load_model("saved_model")
 
 # CIFAR-10 class names
 class_names = [
